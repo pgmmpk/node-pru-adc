@@ -37,7 +37,7 @@ function ensureLoaded(fragment, callback) {
 
 			var found = false;
 			data.toString().split('\n').forEach(function(line) {
-				if (line.search(fragment)) {
+				if (line.search(fragment) != -1) {
 					found = true;
 					return false;
 				}
