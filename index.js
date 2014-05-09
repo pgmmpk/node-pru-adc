@@ -105,7 +105,7 @@ function Capture() {
 	};
 
 	[
-		0x1965beef,  // eye
+		0xbeef1965,  // eye
 		0,           // timer
 		0,           // flags
 		0,           // scope.addr
