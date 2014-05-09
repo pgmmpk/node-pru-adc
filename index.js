@@ -1,5 +1,5 @@
 var prussdrv = require('prussdrv'),
-	fs = require('fs';)
+	fs = require('fs');
 
 function slots(callback) {
 	fs.readdir('/sys/devices', function(err, files) {
