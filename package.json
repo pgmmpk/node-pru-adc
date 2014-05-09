@@ -1,0 +1,21 @@
+{
+  "name": "pru-adc",
+  "version": "0.0.1",
+  "description": "Fast analog sensor capture for BeagleBone Black",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgmmpk/node-pru-adc.git"
+  },
+  "keywords": [
+    "beaglebone",
+    "pru",
+    "adc"
+  ],
+  "author": "Mike Kroutikov",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/pgmmpk/node-pru-adc/issues"
+  }
+}
