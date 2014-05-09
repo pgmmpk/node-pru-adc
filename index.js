@@ -25,7 +25,7 @@ function slots(callback) {
 
 function ensureLoaded(fragment, callback) {
 
-	slots(fragment, function(err, slots) {
+	slots(function(err, slots) {
 		if (err) {
 			return callback(err);
 		}
