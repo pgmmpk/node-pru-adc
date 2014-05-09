@@ -10,7 +10,7 @@ This module is a JavaScript port of *beaglebone_pru_adc*.
 Sample use
 ----------
 
-{% highlight javascript %}
+```javascript
 
 var pruadc = require('pru-adc');
 
@@ -31,5 +31,8 @@ pruadc(function(err, capture) {
 }
 	
 });
+```
 
-{% endhighlight %}
+License
+-------
+MIT
