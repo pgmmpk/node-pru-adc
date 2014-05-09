@@ -36,7 +36,7 @@ function ensureLoaded(fragment, callback) {
 			}
 
 			var found = false;
-			data.split('\n').forEach(function(line) {
+			data.toString().split('\n').forEach(function(line) {
 				if (line.search(fragment)) {
 					found = true;
 					return false;
@@ -179,7 +179,7 @@ function Capture() {
 	}
 
 	capture.start = function() {
-		prussdrv.execute('firmware/firmware.bin');
+		prussdrv.execute(__dirname + '/firmware/firmware.bin');
 	};
 
 	capture.stop = function() {
