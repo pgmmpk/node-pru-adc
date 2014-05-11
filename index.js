@@ -194,7 +194,7 @@ function Capture() {
 		return getWord(capture.OFF.TIMER);
 	};
 
-	capture.ema_pow = function(value) {
+	capture.emaPow = function(value) {
 		
 		if (value === undefined) {
 			return getWord(capture.OFF.EMA_POW);
