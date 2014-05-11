@@ -324,4 +324,4 @@ function Capture() {
 	return capture;
 }
 
-module.exports = init;
+module.exports.Capture = Capture;
