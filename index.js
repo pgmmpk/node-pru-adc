@@ -239,7 +239,7 @@ function Capture() {
 		if (value === undefined) {
 			return (getWord(capture.OFF.ENC0_PIN) >> 8) & 0xff;
 		} else {
-			var packed = getWord(capture.OFF.ENC0_PIN) & 0xffff00ff + ((value & 0xff) << 8);
+			var packed = (getWord(capture.OFF.ENC0_PIN) & 0xffff00ff) + ((value & 0xff) << 8);
 			setWord(capture.OFF.ENC0_PIN, packed);
 			return capture;
 		}
@@ -250,7 +250,7 @@ function Capture() {
 		if (value === undefined) {
 			return getWord(capture.OFF.ENC0_THRESH);
 		} else {
-			setWord(capture.OFF.ENC0_THRESH);
+			setWord(capture.OFF.ENC0_THRESH, value);
 			return capture;
 		}
 	};
@@ -260,7 +260,7 @@ function Capture() {
 		if (value === undefined) {
 			return getWord(capture.OFF.ENC1_THRESH);
 		} else {
-			setWord(capture.OFF.ENC1_THRESH);
+			setWord(capture.OFF.ENC1_THRESH, value);
 			return capture;
 		}
 	};
